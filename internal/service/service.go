@@ -115,6 +115,7 @@ func WithPools() {
 	//
 	fmt.Println("Undone tasks:", len(errors))
 	wg.Wait()
+	// deadlock из-за остановки
 }
 
 type WorkTask struct {
